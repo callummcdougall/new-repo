@@ -18,10 +18,10 @@ def read_from_html(filename):
     plotly_json = {'data': call_args[1], 'layout': call_args[2]}    
     return pio.from_json(json.dumps(plotly_json))
 
-fig_json = read_from_json("./figs-streamlit/test-fig.json")
+# fig_json = read_from_json("./figs-streamlit/test-fig.json")
 
 fig_html = read_from_html("./figs-streamlit/test-fig.html")
 
-st.plotly_chart(fig_json)
+st.plotly_chart(fig_html)
 
-st.plotly_chart(fig_json)
+# st.plotly_chart(fig_json)
