@@ -4,7 +4,7 @@ The plots are stored in the directory `figs-streamlit`, with names like `090 Tri
 
 The tens digit determines which page the plot is on (so if 2 plots have numbers `090` and `095` then they're on the same page). The text after that is the title of the page (as it appears on the sidebar), e.g. the title of the previously mentioned page is `Trig Loss Ratio`.
 
-You can save plots using code like this:
+You can save plots which you generate in your notebook or colab, using code like this:
 
 ```
 def write_to_html(fig, filename=None):
