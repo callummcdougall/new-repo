@@ -7,15 +7,9 @@ The tens digit determines which page the plot is on (so if 2 plots have numbers 
 You can save plots which you generate in your notebook or colab, using code like this:
 
 ```
-def write_to_html(fig, filename=None):
-    if filename is None:
-        filename = fig.layout.title.text
-    if not filename:
-        print("No title!")
-        return
+def write_to_html(fig, filename):
     with open(f"figs-streamlit/{filename}.html", "w") as f:
         f.write(fig.to_html(full_html=False, include_plotlyjs='cdn'))
-    f.close()
     
 write_to_html(fig, '090 Trig Loss Ratio.html')
 ```
